@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#admin" id="admin-link" style="display: none;">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Here you can find my latest web projects.</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div id="project-cards" class="card-container">
+                    <!-- Project cards will be dynamically added here -->
+                </div>
+            </section>
+            <section id="upload">
+                <h2>Upload Project</h2>
+                <form id="upload-form">
+                    <label for="project-title">Project Title:</label>
+                    <input type="text" id="project-title" name="project-title" required>
+                    <label for="project-description">Project Description:</label>
+                    <textarea id="project-description" name="project-description" required></textarea>
+                    <label for="project-file">Project File:</label>
+                    <input type="file" id="project-file" name="project-file" accept=".zip,.rar,.7z" required>
+                    <label for="project-image">Project Image:</label>
+                    <input type="file" id="project-image" name="project-image" accept="image/*" required>
+                    <button type="submit">Upload</button>
+                </form>
+            </section>
+            <section id="login">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+            <section id="admin" style="display: none;">
+                <h2>Admin Panel</h2>
+                <div id="admin-project-cards" class="card-container">
+                    <!-- Admin project cards will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            <div class="developer-info">
+                <p>Name of Developer: Noah Mbuzi</p>
+                <p>Profession: Software Engineer</p>
+                <p>Email: <a href="mailto:timonstephen3@gmail.com">timonstephen3@gmail.com</a></p>
+                <p>Call: +260 973660337 | +260 750117059</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
